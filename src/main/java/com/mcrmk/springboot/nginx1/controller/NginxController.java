@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController()
-@RequestMapping("")
+@RequestMapping("/api")
 public class NginxController {
 
-    @GetMapping("")
+    @GetMapping("mensaje")
     public List<Message> testNginx(){
         return List.of(new Message("Hola Mundo"), new Message("Server 1"));
     }
